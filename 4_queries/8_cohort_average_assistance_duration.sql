@@ -11,4 +11,3 @@ GROUP BY cohorts.name
 ) AS subquery
 
 
-

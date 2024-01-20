@@ -17,8 +17,8 @@ WHERE cohorts.name LIKE '$1'
 LIMIT $2
 
 `;
-const cohortName = process.argv[2];
-const limit = process.argv[3] || 5;
+const cohortName = data[0];
+const limit = data[1];
 // Store all potentially malicious values in an array.
 const values = [`%${cohortName}%`, limit];
 
